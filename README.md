@@ -5,8 +5,8 @@
 <p>1 - Откройте VS</p>
 <p>2 - Нажмите ВИД-ДРУГИЕ ОКНА-КОНСОЛЬ ДИСПЕТЧЕРА ПАКЕТОВ</p>
 <p>3 - Осуществите миграцию. В консоле напишите 
-        Add-midtation init
-        Update-DataBase
+       <p> Add-midtation init</p>
+       <p> Update-DataBase</p>
 <p>4 - Проверьте через менеджер пакетов NuGet установлены ли все пакеты (см. рисунок ниже)</p>
 
 <img src="https://github.com/Ninetto77/OrderWebApplication//blob/main/nuget.png?raw=true" width=50% height=90%>
