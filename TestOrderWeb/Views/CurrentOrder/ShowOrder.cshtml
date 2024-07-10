@@ -1,0 +1,20 @@
+﻿@model Order
+
+<h2>@ViewBag.Title @Model.Id </h2>
+
+<div class="container">
+	<div class="alert alert-warning mt-3">
+
+		<p><b>Номер заказа:</b> @Model.Id</p>
+		<p> <b>Город отправителя:</b> @Model.SenderCity</p>
+		<p> <b>Адрес отправителя:</b> @Model.SenderAddres</p>
+		<p> <b>Город получателя:</b> @Model.RecipientCity</p>
+		<p> <b>Адрес получателя:</b> @Model.RecipientAddres</p>
+		<p> <b>Вес груза:</b> @Model.CargoWeight</p>
+		<p> <b>Дата забора груза:</b> @Model.DateCargoPickup.ToString()</p>
+
+	</div>
+
+	<p><a class="btn btn-warning mt-2" href="/Home/Index">Назад</a> </p>
+
+</div>

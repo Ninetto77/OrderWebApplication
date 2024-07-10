@@ -1,0 +1,66 @@
+﻿@model Order
+
+
+<div class="row">
+    <h3>@ViewBag.Title</h3>
+    <div class="alert alert-warning mt-3">
+
+    <form asp-controller="AddOrder" asp-action="Checkout" method="post" class="form-horizontal">
+
+        <div class="form-group">
+            <label asp-for="SenderCity"></label>
+            <div class="col-md-5">
+                <input asp-for="SenderCity" class="form-control" />
+                <span asp-validation-for="SenderCity" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SenderAddres"></label>
+            <div class="col-md-5">
+                <input asp-for="SenderAddres" class="form-control" />
+                <span asp-validation-for="SenderAddres" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="RecipientCity"></label>
+            <div class="col-md-5">
+                <input asp-for="RecipientCity" class="form-control" />
+                <span asp-validation-for="RecipientCity" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="RecipientAddres"></label>
+            <div class="col-md-5">
+                <input asp-for="RecipientAddres" class="form-control" />
+                <span asp-validation-for="RecipientAddres" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CargoWeight"></label>
+            <div class="col-md-5">
+                <input asp-for="CargoWeight" class="form-control" />
+                <span asp-validation-for="CargoWeight" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateCargoPickup"></label>
+            <div class="col-md-5">
+                <input asp-for="DateCargoPickup" class="form-control" />
+                <span asp-validation-for="DateCargoPickup" class="text-danger"></span>
+            </div>
+        </div>
+
+
+			<input class ="btn btn-warning mt-2" type="submit" value="Создать заказ" />
+
+
+
+    </form>
+    </div>
+</div>
+

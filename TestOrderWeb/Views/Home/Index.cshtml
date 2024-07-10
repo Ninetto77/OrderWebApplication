@@ -1,0 +1,18 @@
+﻿@model OrdersListViewModel
+
+
+<h2>@ViewBag.Title</h2>
+<div class="container mt-5">
+
+@{
+    foreach (var item in Model.AllOrders)
+    {
+        <div class="alert alert-warning mt-3">
+            <h2>Номер заказа: @item.Id</h2>
+            <p>Отправитель: @item.SenderCity</p>
+            <p>@Html.ActionLink("Подробнее", "ShowOrder", "CurrentOrder", new { id = @item.Id }, null)</p>
+        </div>
+    }
+}
+</div>
+
